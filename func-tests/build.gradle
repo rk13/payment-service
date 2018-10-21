@@ -23,4 +23,19 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${versions.lombok}"
 }
 
+def cucumberArgs() {
+    (['--glue', 'payments.test.glue', '--format', 'pretty']
+            << 'src/test/resources/features').flatten()
+}
 
+task cucumber() {
+    dependsOn testClasses
+
+    doLast {
+        javaexec {
+            classpath = configurations.testRuntime + sourceSets.main.output + sourceSets.test.output
+            main = "cucumber.api.cli.Main"
+            setArgs cucumberArgs()
+        }
+    }
+}
