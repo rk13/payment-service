@@ -69,3 +69,7 @@ Compiler annotation processors should be enabled in IDEA
 
 ![Server Swagger UI](idea.png?raw=true)
 
+Running cucumber tests from console
+
+![Cucumber1](cucumber-1.png?raw=true)
+![Cucumber2](cucumber-2.png?raw=true)
