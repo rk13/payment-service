@@ -4,6 +4,10 @@ apply plugin: 'com.github.johnrengelman.shadow'
 version = '1.0.0'
 mainClassName = 'payments.PaymentsApplication'
 
+repositories {
+    jcenter()
+}
+
 ext {
     versions = [
             dropwizard      : '1.3.7',

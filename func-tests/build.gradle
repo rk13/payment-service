@@ -9,6 +9,10 @@ ext {
     ]
 }
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     compile "info.cukes:cucumber-java8:${versions.cucumber}"
     compile "info.cukes:cucumber-junit:${versions.cucumber}"
