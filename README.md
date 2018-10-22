@@ -1,5 +1,5 @@
 # Payments
-[![Build status](https://travis-ci.org/rk13/payment-service.svg?branch=master)](https://travis-ci.org/rk13/payment-service.svg?branch=master)
+[![Build status](https://travis-ci.org/rk13/payment-service.svg?branch=master)](https://travis-ci.org/rk13/payment-service)
 
 ## Banking api as you wished it would be
 
